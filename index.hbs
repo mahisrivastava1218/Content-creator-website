@@ -1,0 +1,62 @@
+{{!-- //express js view engine handlebars --}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    {{!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" --}}
+    <title>Document</title>
+</head>
+     
+<body>
+       
+      {{>navbar}}
+      {{!-- col-12(shows mobile device length) --}}
+      {{!-- /mt=margin --}}
+      {{!-- hero section starts --}}
+      <div class="container-fluid- mt-5"> 
+        <div class="row">
+          <div class="col-md-10 col-12 mx-auto">
+{{!-- md -> medium device 12 shows space mp-mobile --}}
+           <div class="row">
+        
+            {{!-- hero text order(class) order(property) --}}
+            <div class="col-md-6 col-12 hero-text order-md-0 order-1 d-flex justify-content-center align-items-start flex-column">
+            <h1>our service will help you</h1>
+            <h1>making vlog,making content</h1>
+            <p>We are the team of <span class="bold-style">Professional content creator</span></p>
+            <button class="btn-style btn-primary">sign in</button>
+           </div>
+           {{!-- right side --}}
+           <div class="col-md-6 col-12 hero-text order-md-1 order-0">
+            <figure>
+              <img src="IMAGE.jpg" alt="herosection_image">
+            </figure>
+           </div>
+          </div>
+        </div>
+       </div>
+      <div>
+
+      </div>
+      {{!-- section ends --}}
+      {{!-- about us  page--}}
+       {{>about}}
+       {{!-- about us ends --}}
+       {{!-- service  page--}}
+       {{>service}}
+       {{!-- service page ends --}}
+    {{!-- <button class="btn btn-success">login</button> --}}
+    {{!-- maps start --}}
+     {{>maps}}
+     {{!-- maps ends --}}
+     {{!-- maps start --}}
+     {{>contact}}
+     {{!-- maps ends --}}
+    <script src="../jq/jquery.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+</body>
+</html>
